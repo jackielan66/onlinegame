@@ -13,12 +13,8 @@ pipeline {
 
     // 构建触发器
     triggers {
-        // 监听GitLab Webhook
-        gitlabPush(
-            triggerOnPush: true,
-            triggerOnMergeRequest: true,
-            branchFilterType: 'All'
-        )
+        // 监听GitHub Webhook
+        githubPush()
     }
 
     // 构建参数
