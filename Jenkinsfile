@@ -4,8 +4,8 @@ pipeline {
     // 环境变量配置
     environment {
         DOCKER_REGISTRY = credentials('docker-registry-url')
-        SONAR_TOKEN = credentials('sonarqube-token')
-        NEXUS_CREDENTIALS = credentials('nexus-credentials')
+        // SONAR_TOKEN = credentials('sonarqube-token')
+        // NEXUS_CREDENTIALS = credentials('nexus-credentials')
         NODE_ENV = 'production'
         APP_NAME = 'online-game'
         DOCKER_IMAGE = "${DOCKER_REGISTRY}/${APP_NAME}"
