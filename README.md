@@ -1,3 +1,4 @@
+# 出海在线小游戏
 ## update deploy
 use jenkins to update deploy and docker to deploy to server
 1. jenkins pull code from gitlab
